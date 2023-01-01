@@ -1,0 +1,40 @@
+---
+import GlobeIcon from "../icons/GlobeIcon.astro";
+import Tag from "./Tag.astro";
+
+export interface Props {
+  title: string;
+  desc: string;
+  ghUrl: string;
+  webUrl?: string;
+  tech: Array<string>;
+}
+
+const { title, desc, ghUrl, webUrl, tech } = Astro.props;
+---
+
+<li
+  class="p-4 bg-slate-700 bg-opacity-40 list-none w-64 rounded flex flex-col gap-3"
+>
+  <h2 class="text-xl font-bold">
+    {title}
+  </h2>
+  <ul>
+    {tech.map((techItem) => <Tag name={techItem} />)}
+  </ul>
+  <p>
+    {desc}
+  </p>
+  <div class="flex items-center gap-4">
+    <a href={ghUrl} target="_blank">
+      <img class="w-7" src="/github-mark-white.svg" alt={ghUrl} />
+    </a>
+    {
+      webUrl ? (
+        <a href={webUrl} target="_blank">
+          <GlobeIcon class="w-7 h-7" />
+        </a>
+      ) : null
+    }
+  </div>
+</li>
