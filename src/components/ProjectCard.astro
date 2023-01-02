@@ -1,4 +1,5 @@
 ---
+import GithubIcon from "../icons/GithubIcon.astro";
 import GlobeIcon from "../icons/GlobeIcon.astro";
 import Tag from "./Tag.astro";
 
@@ -25,13 +26,13 @@ const { title, desc, ghUrl, webUrl, tech } = Astro.props;
   <p>
     {desc}
   </p>
-  <div class="flex items-center gap-4">
-    <a href={ghUrl} target="_blank">
-      <img class="w-7" src="/github-mark-white.svg" alt={ghUrl} />
+  <div class="flex items-end gap-4 flex-1">
+    <a title={`${title} Github repo.`} href={ghUrl} target="_blank">
+      <GithubIcon class="w-7 h-7" />
     </a>
     {
       webUrl ? (
-        <a href={webUrl} target="_blank">
+        <a title={`${title} deployed site.`} href={webUrl} target="_blank">
           <GlobeIcon class="w-7 h-7" />
         </a>
       ) : null

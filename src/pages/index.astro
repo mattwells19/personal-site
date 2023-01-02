@@ -1,68 +1,64 @@
 ---
 import ProjectCard from "../components/ProjectCard.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Matt Wells</title>
-  </head>
-  <body class="bg-slate-800 text-slate-100">
-    <main class="max-w-4xl m-auto p-5">
-      <section
-        class="rounded-lg py-5 px-6 flex items-center gap-5 bg-slate-700 bg-opacity-40 mt-16"
-      >
-        <img
-          class="w-40 h-40 rounded-full bg-slate-800 p-3"
-          alt="Headshot of Matt"
-          src="https://avatars.githubusercontent.com/u/36650048?v=4"
-        />
-        <div class="flex flex-col gap-4">
-          <h1 class="flex flex-col gap-2">
-            <p class="text-xl">Why, hello! 👋</p>
-            <p class="text-3xl font-medium">My name's Matt</p>
-            <p>
-              I'm a full stack web developer who's passionate about solving
-              problems using software.
-            </p>
-          </h1>
-          <div class="flex items-center gap-4">
-            <a href="https://github.com/mattwells19" target="_blank">
-              <img
-                class="w-7"
-                src="/github-mark-white.svg"
-                alt="Github logo icon"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/mwells21/" target="_blank">
-              <img class="w-7" src="/LI-In-Bug.png" alt="LinkedIn logo icon" />
-            </a>
-          </div>
+<Layout class="bg-slate-800 text-slate-100">
+  <main class="max-w-4xl m-auto p-5">
+    <section
+      class="rounded-lg py-5 px-6 flex items-center gap-5 bg-slate-700 bg-opacity-40 mt-16 flex-col sm:flex-row"
+    >
+      <img
+        class="w-40 h-40 rounded-full bg-slate-800 p-3"
+        alt="Headshot of Matt"
+        src="https://avatars.githubusercontent.com/u/36650048?v=4"
+      />
+      <div class="flex flex-col gap-4">
+        <h1 class="flex flex-col gap-2">
+          <p class="text-xl">Why, hello! 👋</p>
+          <p class="text-3xl font-medium">My name's Matt</p>
+          <p>
+            I'm a full stack web developer who's passionate about solving
+            problems using software.
+          </p>
+        </h1>
+        <div class="flex items-center gap-4">
+          <a
+            title="Matt's Github profile"
+            href="https://github.com/mattwells19"
+            target="_blank"
+          >
+            <GithubIcon class="w-7 h-7" />
+          </a>
+          <a
+            title="Matt's LinkedIn profile"
+            href="https://www.linkedin.com/in/mwells21/"
+            target="_blank"
+          >
+            <img class="w-7" src="/LI-In-Bug.png" alt="LinkedIn logo icon" />
+          </a>
         </div>
-      </section>
-      <section class="mt-24">
-        <h2 class="text-3xl font-bold mb-5">My projects</h2>
-        <ul class="flex flex-wrap gap-4 items-start">
-          <ProjectCard
-            title="🃏 Devs Playing Poker"
-            desc="A simple and fast tool to help your scrum team effort tickets as quickly as possible."
-            ghUrl="https://github.com/lvl-mattwells/DevsPlayingPoker"
-            webUrl="https://devsplayingpoker.com"
-            tech={["Solid"]}
-          />
-          <ProjectCard
-            title="🎲 Cooped Up"
-            desc="A web-based version of the popular board game Coup."
-            ghUrl="https://github.com/mattwells19/Cooped-Up"
-            webUrl="https://coopedup.mattwells.dev"
-            tech={["React"]}
-          />
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
+      </div>
+    </section>
+    <section class="mt-24">
+      <h2 class="text-3xl font-bold mb-5">My projects</h2>
+      <ul class="flex flex-wrap gap-4">
+        <ProjectCard
+          title="🃏 Devs Playing Poker"
+          desc="A simple and fast tool to help your scrum team effort tickets as quickly as possible."
+          ghUrl="https://github.com/lvl-mattwells/DevsPlayingPoker"
+          webUrl="https://devsplayingpoker.com"
+          tech={["Solid"]}
+        />
+        <ProjectCard
+          title="🎲 Cooped Up"
+          desc="A web-based version of the popular board game Coup."
+          ghUrl="https://github.com/mattwells19/Cooped-Up"
+          webUrl="https://coopedup.mattwells.dev"
+          tech={["React"]}
+        />
+      </ul>
+    </section>
+  </main>
+</Layout>
