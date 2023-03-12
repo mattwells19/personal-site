@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
   <a
     href="/MattWells-Resume.pdf"
     download
-    class="rounded-full bg-orange-800 fixed bottom-6 right-6 text-white shadow-lg shadow-slate-400 w-12 h-12 overflow-hidden p-2 hover:w-60 no-underline transition-all animate-bounce-twice"
+    class="rounded-full bg-orange-800 fixed bottom-6 right-6 text-white shadow-lg shadow-slate-400 w-12 h-12 overflow-hidden p-2 hover:w-60 no-underline transition-all animate-bounce-twice print:hidden"
   >
     <span class="whitespace-nowrap inline-flex items-center m-auto">
       <DownloadIcon class="w-8 inline mr-3" />
@@ -55,7 +55,9 @@ import Layout from "../layouts/Layout.astro";
     <section class="mt-6">
       <h2 class="text-xl uppercase">Education</h2>
       <hr />
-      <p>University of North Carolina at Charlotte, Charlotte NC</p>
+      <p class="mb-2">
+        University of North Carolina at Charlotte, Charlotte NC
+      </p>
       <ul>
         <li>
           <dl class="space-between">
@@ -89,26 +91,37 @@ import Layout from "../layouts/Layout.astro";
                 target="_blank"
                 href="https://foro.io/">Foro.io</a
               >).
+              <ul>
+                <li>
+                  Co-led planning for new features for the frontend development
+                  team.
+                </li>
+                <li>
+                  Provided insight into the design of the backend architecture
+                  by developing entity-relationship diagrams and brainstorming
+                  solutions for new features.
+                </li>
+                <li>
+                  Designed and implemented a GraphQL service layer API for
+                  communicating with a micro-service backend. (<a
+                    target="_blank"
+                    href="https://docs.google.com/presentation/d/1cF_uM2SLgrKeihOeomRgk3sDCRAJJJdTp54fDOYbYmk/edit?usp=sharing"
+                    >Iris Talk Presentation</a
+                  >)
+                </li>
+                <li>
+                  Designed and implemented a set of form components with
+                  validation to reduce development effort and ensure consistency
+                  throughout the UI (<a
+                    target="_blank"
+                    href="https://formidable.mattwells.dev">Formidable</a
+                  >).
+                </li>
+              </ul>
             </li>
             <li>
-              Co-led planning for new features for the frontend development
-              team.
-            </li>
-            <li>
-              Provided insight into the design of the backend architecture by
-              developing entity-relationship diagrams and brainstorming
-              solutions for new features.
-            </li>
-            <li>
-              Designed and implemented a GraphQL service layer API for
-              communicating with a micro-service backend.
-            </li>
-            <li>
-              Designed and implemented a set of form components with validation
-              to reduce development effort and ensure consistency throughout the
-              UI (<a target="_blank" href="https://formidable.mattwells.dev"
-                >Formidable</a
-              >).
+              Planned, coordinated, and lead a bench project for searching and
+              inventoring developer skills within the company.
             </li>
             <li>
               Designed, organized, led, and presented the development of a
