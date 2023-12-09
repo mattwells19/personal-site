@@ -26,6 +26,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex items-center gap-4">
           <a
             title="Matt's Github profile"
+            aria-label="Matt's Github profile"
             href="https://github.com/mattwells19"
             target="_blank"
           >
@@ -33,30 +34,63 @@ import Layout from "../layouts/Layout.astro";
           </a>
           <a
             title="Matt's LinkedIn profile"
+            aria-label="Matt's LinkedIn profile"
             href="https://www.linkedin.com/in/mwells21/"
             target="_blank"
           >
             <img class="w-7" src="/LI-In-Bug.png" alt="LinkedIn logo icon" />
           </a>
+          <a title="Matt's Resume" href="/resume">Resume</a>
         </div>
       </div>
     </section>
     <section class="mt-24">
-      <h2 class="text-3xl font-bold mb-5">My projects</h2>
-      <ul class="flex flex-wrap gap-4">
+      <h2
+        class="text-3xl font-bold mb-5 text-transparent bg-clip-text w-fit bg-gradient-to-br from-white to-slate-500"
+      >
+        My projects
+      </h2>
+      <ul class="grid gap-4 grid-cols-1 sm:grid-cols-3">
         <ProjectCard
           title="🃏 Devs Playing Poker"
           desc="A simple and fast tool to help your scrum team effort tickets as quickly as possible."
           ghUrl="https://github.com/lvl-mattwells/DevsPlayingPoker"
           webUrl="https://devsplayingpoker.com"
-          tech={["Solid"]}
+          tech={["Solid", "TypeScript", "Deno", "UnoCSS"]}
         />
         <ProjectCard
           title="🎲 Cooped Up"
           desc="A web-based version of the popular board game Coup."
           ghUrl="https://github.com/mattwells19/Cooped-Up"
           webUrl="https://coopedup.mattwells.dev"
-          tech={["React"]}
+          tech={["React", "TypeScript", "Express", "XState", "Chakra UI"]}
+        />
+        <ProjectCard
+          title="📝 Formidable"
+          desc="A form library to minimize re-renders and reduce time spent building forms while maintaining great UX."
+          ghUrl="https://github.com/mattwells19/formidable"
+          webUrl="https://formidable.mattwells.dev"
+          tech={["React", "TypeScript", "Chakra UI", "Zod"]}
+        />
+        <ProjectCard
+          title="🔌 Intro to WebSockets"
+          desc="Demo/presentation of how to build a WS server and connect to it using plain JS."
+          ghUrl="https://github.com/mattwells19/IntroToWebSockets"
+          tech={["Deno"]}
+        />
+        <ProjectCard
+          title="🚗 UNCC 6 Mans"
+          desc="A content site for the UNCC Rocket League community's 6 mans community."
+          ghUrl="https://github.com/mattwells19/UNCC-SIX-MANS-WEB"
+          webUrl="https://6mans.mattwells.dev"
+          tech={["Remix"]}
+        />
+        <ProjectCard
+          title="👩‍🎤 Component Library/Emotion POC"
+          desc="An investigation into how to build your component library with CSS-as-props API."
+          ghUrl="https://github.com/mattwells19/ComponentLibraryPOC"
+          webUrl="https://emotion-poc.mattwells.dev"
+          tech={["React", "Emotion JS"]}
         />
       </ul>
     </section>

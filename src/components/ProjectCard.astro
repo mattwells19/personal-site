@@ -3,24 +3,24 @@ import GithubIcon from "../icons/GithubIcon.astro";
 import GlobeIcon from "../icons/GlobeIcon.astro";
 import Tag from "./Tag.astro";
 
-export interface Props {
+type Props = {
   title: string;
   desc: string;
   ghUrl: string;
   webUrl?: string;
   tech: Array<string>;
-}
+};
 
 const { title, desc, ghUrl, webUrl, tech } = Astro.props;
 ---
 
 <li
-  class="p-4 bg-slate-700 bg-opacity-40 list-none w-64 rounded flex flex-col gap-3"
+  class="p-4 bg-slate-700 bg-opacity-40 list-none rounded flex flex-col gap-3"
 >
   <h2 class="text-xl font-bold">
     {title}
   </h2>
-  <ul>
+  <ul class="flex gap-1 flex-wrap">
     {tech.map((techItem) => <Tag name={techItem} />)}
   </ul>
   <p>
