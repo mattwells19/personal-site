@@ -7,7 +7,6 @@ export interface Props {
 const props = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,8 +18,9 @@ const props = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="generator" content={Astro.generator} />
-    <title>{props.title ? `${props.title} | ` : ""}Matt Wells</title>
+    <title>{props.title ? `${props.title} | ` : ""}{`Matt Wells`}</title>
   </head>
+
   <body class={props.class}>
     <slot />
   </body>

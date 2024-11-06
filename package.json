@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.0.3",
-    "@fontsource/noto-sans": "^5.0.18",
-    "astro": "^4.0.3",
-    "node-html-parser": "^6.1.11",
-    "tailwindcss": "^3.3.6"
+    "@astrojs/tailwind": "^5.1.2",
+    "@fontsource/noto-sans": "^5.1.0",
+    "astro": "^4.16.10",
+    "node-html-parser": "^6.1.13",
+    "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10"
+    "@tailwindcss/typography": "^0.5.15"
   }
 }

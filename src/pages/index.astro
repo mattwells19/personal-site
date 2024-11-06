@@ -12,7 +12,7 @@ import Layout from "../layouts/Layout.astro";
       <img
         class="w-40 h-40 rounded-full bg-slate-800 p-3"
         alt="Headshot of Matt"
-        src="https://avatars.githubusercontent.com/u/36650048?v=4"
+        src="https://avatars.githubusercontent.com/u/36650048"
       />
       <div class="flex flex-col gap-4">
         <h1 class="flex flex-col gap-2">
@@ -52,9 +52,23 @@ import Layout from "../layouts/Layout.astro";
       </h2>
       <ul class="grid gap-4 grid-cols-1 sm:grid-cols-3">
         <ProjectCard
+          title="🎭️ CATCh Website"
+          desc="The official website for the Comedy Arts Theater of Charlotte."
+          ghUrl="https://github.com/mattwells19/CATCh"
+          webUrl="https://catch.theater"
+          tech={["Astro", "Tailwind", "Sass"]}
+        />
+        <ProjectCard
+          title="🪨 Love Pebble"
+          desc="A web-based, 6-player version of the popular card game Love Letter."
+          ghUrl="https://github.com/mattwells19/LovePebble"
+          webUrl="https://lovepebble.mattwells.dev"
+          tech={["React", "TypeScript", "Deno", "Chakra UI"]}
+        />
+        <ProjectCard
           title="🃏 Devs Playing Poker"
           desc="A simple and fast tool to help your scrum team effort tickets as quickly as possible."
-          ghUrl="https://github.com/lvl-mattwells/DevsPlayingPoker"
+          ghUrl="https://github.com/mattwells19/DevsPlayingPoker"
           webUrl="https://devsplayingpoker.com"
           tech={["Solid", "TypeScript", "Deno", "UnoCSS"]}
         />
