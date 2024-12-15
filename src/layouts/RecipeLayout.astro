@@ -1,13 +1,15 @@
 ---
 export interface Props {
-  title: string;
-  class?: string;
+  frontmatter: {
+    title: string;
+    class?: string;
+  };
 }
 
-const props = Astro.props.frontmatter as Props;
+const props = Astro.props.frontmatter;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

@@ -1,7 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const allRecipes = await Astro.glob("./recipes/*.md");
+// https://docs.astro.build/en/guides/markdown-content/#importing-markdown
+interface ImportedMarkdownFileSubset {
+  url: string;
+  frontmatter: { title: string };
+}
+
+const allRecipes = Object.values<ImportedMarkdownFileSubset>(
+  import.meta.glob("./recipes/*.md", { eager: true })
+);
 ---
 
 <Layout title="Recipes">
