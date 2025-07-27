@@ -31,25 +31,12 @@ import Layout from "../layouts/Layout.astro";
       <h2 class="text-xl uppercase">Summary</h2>
       <hr />
       <p>
-        A team-oriented, naturally curious, self-driven full stack developer
-        that has an eye for frontend design and development that can also create
-        a high performant, developer friendly backend. Looking for a full
-        stack/frontend developer role that involves React JS development with a
-        strong relationship with the UI/UX team.
+        A team-oriented, naturally curious full stack developer that has an eye
+        for frontend design and development that can also create a high
+        performant, developer friendly backend. Looking for a full
+        stack/frontend engineer role that involves ReactJS or SolidJS
+        development with a strong relationship with the UI/UX team.
       </p>
-      <ul>
-        <li>
-          Co-led the frontend architecture and development of a greenfield
-          product for a startup company (Foro.io).
-        </li>
-        <li>
-          Designed and implemented a GraphQL service layer API for communicating
-          with a micro-service backend.
-        </li>
-        <li>
-          Automated the creation of an integration test database using Docker.
-        </li>
-      </ul>
     </section>
 
     <section class="mt-6">
@@ -80,8 +67,53 @@ import Layout from "../layouts/Layout.astro";
       <ul class="main-section-list">
         <li>
           <div class="space-between">
+            <h3 class="text-lg underline">Senior Software Engineer</h3>
+            <span>July 2023 - Present</span>
+          </div>
+          <p>Raptor Maps, Remote</p>
+          <ul>
+            <li>
+              Planned and implemented numerous features for customer-facing and
+              internal products.
+              <ul>
+                <li>
+                  Planned and implemented end-to-end the ability to
+                  automatically take snapshots of the Map view so customers
+                  could take physical copies out into the field.
+                </li>
+                <li>
+                  Revamped the main navigation of the app to not only improve
+                  the UI/UX but also improve the DX of adding protected routes
+                  based on user and org permissions.
+                </li>
+                <li>
+                  Improved peformance of our main Map product by adding caching,
+                  preventing duplicate API calls, and efficiently sharing data
+                  across the view.
+                </li>
+                <li>
+                  Built a new, responsive Dashboard experience with custom
+                  charts to give users a high-level view of the performance of
+                  their solar farms.
+                </li>
+                <li>
+                  Planned and implemented end-to-end an updated, streamlined
+                  experience for communicating order status to customers.
+                </li>
+              </ul>
+            </li>
+            <li>Co-maintained the internal component library, Raptor UI.</li>
+            <li>Mentored a summer intern.</li>
+            <li>
+              Led group viewing sessions of Kent C. Dodds' Epic React course.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="space-between">
             <h3 class="text-lg underline">Senior Developer</h3>
-            <span>October 2021 - Present</span>
+            <span>October 2021 - July 2023</span>
           </div>
           <p>Levvel, Charlotte NC &#8594; Endava, Charlotte NC</p>
           <ul>
@@ -190,26 +222,6 @@ import Layout from "../layouts/Layout.astro";
             </li>
           </ul>
         </li>
-
-        <li>
-          <div class="space-between">
-            <h3 class="text-lg underline">Software Development Intern</h3>
-            <span>May 2019 - August 2019</span>
-          </div>
-          <p>SentryOne, Charlotte NC</p>
-          <ul>
-            <li>
-              Successfully worked as an individual contributor as part of a
-              scrum team in the engineering department developing a web database
-              monitoring application.
-            </li>
-            <li>Participated in regression testing for production releases.</li>
-            <li>
-              Developed and presented work as part of an “innovation sprint”
-              working with a different team outside of the US.
-            </li>
-          </ul>
-        </li>
       </ul>
     </section>
 
@@ -218,16 +230,29 @@ import Layout from "../layouts/Layout.astro";
       <hr />
       <ul class="main-section-list">
         <li>
+          <h3 class="text-lg underline">Love Pebble</h3>
+          <p>A web-based version of the board game Love Letter.</p>
+          <ul>
+            <li>ReactJS (Typescript), Deno, Chakra UI</li>
+            <li>
+              <a target="_blank" href="https://lovepebble.mattwells.dev"
+                >https://lovepebble.mattwells.dev</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
           <h3 class="text-lg underline">Devs Playing Poker</h3>
           <p>
             A tool for developers and scrum managers to effort work items as
             quickly as possible.
           </p>
           <ul>
-            <li>Solid JS (Typescript), Sass, UnoCSS, Deno</li>
+            <li>SolidJS (Typescript), Sass, UnoCSS, Deno</li>
             <li>
-              <a target="_blank" href="https://devsplayingpoker.com/"
-                >https://devsplayingpoker.com/</a
+              <a target="_blank" href="https://devsplayingpoker.com"
+                >https://devsplayingpoker.com</a
               >
             </li>
           </ul>
@@ -237,7 +262,7 @@ import Layout from "../layouts/Layout.astro";
           <h3 class="text-lg underline">Cooped Up</h3>
           <p>A web-based version of the popular board game Coup.</p>
           <ul>
-            <li>React JS (Typescript), Express, Socket.IO</li>
+            <li>ReactJS (Typescript), NodeJS, Express, Socket.IO</li>
             <li>
               <a target="_blank" href="https://coopedup.mattwells.dev"
                 >https://coopedup.mattwells.dev</a
@@ -265,6 +290,7 @@ import Layout from "../layouts/Layout.astro";
   @media print {
     html {
       background-color: white;
+      font-size: 85%;
     }
     main {
       padding: 0;
