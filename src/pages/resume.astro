@@ -18,12 +18,21 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <section class="flex items-center justify-between">
       <h1 class="text-4xl font-bold">Matt Wells</h1>
-      <div class="flex gap-2">
-        <a target="_blank" href="https://github.com/mattwells19">Github</a>
-        <span>&#8226;</span>
-        <a target="_blank" href="https://www.linkedin.com/in/mwells21/">
-          LinkedIn
-        </a>
+      <div class="flex flex-col gap-1 items-end">
+        <!-- <div class="flex gap-2">
+          <a href="mailto:[REDACTED]" class="plain-link">
+            [REDACTED]
+          </a>
+          <span>&#8226;</span>
+          <a href="tel:[REDACTED]" class="plain-link">[REDACTED]</a>
+        </div> -->
+        <div class="flex gap-2">
+          <a target="_blank" href="https://github.com/mattwells19">Github</a>
+          <span>&#8226;</span>
+          <a target="_blank" href="https://www.linkedin.com/in/mwells21/">
+            LinkedIn
+          </a>
+        </div>
       </div>
     </section>
 
@@ -31,20 +40,18 @@ import Layout from "../layouts/Layout.astro";
       <h2 class="text-xl uppercase">Summary</h2>
       <hr />
       <p>
-        A team-oriented, naturally curious full stack developer that has an eye
-        for frontend design and development that can also create a high
-        performant, developer friendly backend. Looking for a full
-        stack/frontend engineer role that involves ReactJS or SolidJS
-        development with a strong relationship with the UI/UX team.
+        A team-oriented, product-minded, full-stack developer who has an eye for
+        web design, is highly skilled in frontend development, and has strong
+        backend development experience. Looking for a full-stack/frontend
+        engineer role that involves ReactJS or SolidJS development with a close
+        relationship with the UI/UX team.
       </p>
     </section>
 
     <section class="mt-6">
       <h2 class="text-xl uppercase">Education</h2>
       <hr />
-      <p class="mb-2">
-        University of North Carolina at Charlotte, Charlotte NC
-      </p>
+      <p>University of North Carolina at Charlotte, Charlotte NC</p>
       <ul>
         <li>
           <dl class="space-between">
@@ -73,18 +80,17 @@ import Layout from "../layouts/Layout.astro";
           <p>Raptor Maps, Remote</p>
           <ul>
             <li>
-              Planned and implemented numerous features for customer-facing and
-              internal products.
+              Planned, lead, and implemented numerous features for
+              customer-facing and internal products.
               <ul>
+                <li>
+                  Developed a feature for an internal product during a hackathon
+                  that improved our users' efficiency by 60%.
+                </li>
                 <li>
                   Planned and implemented end-to-end the ability to
                   automatically take snapshots of the Map view so customers
                   could take physical copies out into the field.
-                </li>
-                <li>
-                  Revamped the main navigation of the app to not only improve
-                  the UI/UX but also improve the DX of adding protected routes
-                  based on user and org permissions.
                 </li>
                 <li>
                   Improved peformance of our main Map product by adding caching,
@@ -230,6 +236,19 @@ import Layout from "../layouts/Layout.astro";
       <hr />
       <ul class="main-section-list">
         <li>
+          <h3 class="text-lg underline">CATCh Website</h3>
+          <p>The official website for the Comedy Arts Theater of Charlotte.</p>
+          <ul>
+            <li>Astro, NodeJS, TailwindCSS</li>
+            <li>
+              <a target="_blank" href="https://catch.theater"
+                >https://catch.theater</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
           <h3 class="text-lg underline">Love Pebble</h3>
           <p>A web-based version of the board game Love Letter.</p>
           <ul>
@@ -253,19 +272,6 @@ import Layout from "../layouts/Layout.astro";
             <li>
               <a target="_blank" href="https://devsplayingpoker.com"
                 >https://devsplayingpoker.com</a
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <h3 class="text-lg underline">Cooped Up</h3>
-          <p>A web-based version of the popular board game Coup.</p>
-          <ul>
-            <li>ReactJS (Typescript), NodeJS, Express, Socket.IO</li>
-            <li>
-              <a target="_blank" href="https://coopedup.mattwells.dev"
-                >https://coopedup.mattwells.dev</a
               >
             </li>
           </ul>
@@ -326,7 +332,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   p {
-    margin: 1rem 0;
+    margin: 0.75rem 0;
   }
 
   ul {
@@ -342,6 +348,11 @@ import Layout from "../layouts/Layout.astro";
   a {
     text-decoration: underline;
     color: blue;
+  }
+
+  a.plain-link {
+    text-decoration: none;
+    color: inherit;
   }
 
   .space-between {
